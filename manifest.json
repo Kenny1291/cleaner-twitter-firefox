@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Cleaner Twitter",
+  "description": "Make Twitter UI cleaner by removing annoying pieces.",
+  "version": "0.2.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "19": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+        "js": ["content.js"],
+        "matches": [
+            "https://*.twitter.com/*"
+        ],
+        "run_at": "document_end"    
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },  
+  "options_page": "options/options.html",
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["utils.js"]
+  }],	
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{e384cb9b-e566-494f-ba83-25e246c2840c}"
+    }
+  }
+}

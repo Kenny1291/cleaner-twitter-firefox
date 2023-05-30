@@ -1,0 +1,48 @@
+html {
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    color: white;
+}
+
+body {
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    text-align: left;
+}
+
+button {
+    float: right;
+    background-color: antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#saveButton {
+    padding: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+#resetButton {
+    padding: 0.5rem;
+}
+
+#editor {
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+}

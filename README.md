@@ -11,7 +11,6 @@ A Firefox extension to make Twitter UI cleaner by removing annoying pieces. Cust
     - Hide Tweet Analytics
     - Hide Twitter Blue Menu Option
     - Hide Trends For You
-    - Hide Who To Follow
     - Hide Footer
     - Hide Message Drawer
 
